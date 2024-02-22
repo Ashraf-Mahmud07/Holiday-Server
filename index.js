@@ -54,12 +54,12 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
-    const userCollection = client.db("moviesDB").collection("users");
-    const favoriteCollection = client.db("moviesDB").collection("favorite");
-    const saveCollection = client.db("moviesDB").collection("save");
-    const paymentCollection = client.db("moviesDB").collection("payment");
+    const userCollection = client.db("Fixfilm").collection("Users");
+    const favoriteCollection = client.db("Fixfilm").collection("favorite");
+    const saveCollection = client.db("Fixfilm").collection("save");
+    const paymentCollection = client.db("Fixfilm").collection("payment");
     const subscriptionCollection = client
-      .db("moviesDB")
+      .db("Fixfilm")
       .collection("subscriptions");
 
     // sign jwt
